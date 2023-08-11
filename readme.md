@@ -1,3 +1,0 @@
-Write a recipe for a unique non-alcoholic cocktail and provide a prompt that visualises it. Use the prompt below as a construct:
-
-IMAGE_TYPE: Food photography | GENRE: Gourmet | EMOTION: Delightful | SCENE: An exquisitely designed dessert, featuring a chocolate sphere filled with a velvety mousse and adorned with gold leaf, elegantly placed on a white porcelain plate | ACTORS: None | LOCATION TYPE: Studio | CAMERA MODEL: Canon EOS 5D Mark IV | CAMERA LENSE: 100mm f/2.8 Macro | SPECIAL EFFECTS: Soft lighting | TAGS: gourmet dessert, chocolate sphere, gold leaf, artistic presentation | TIME_OF_DAY: Studio lighting | INTERACTION: None | --ar 4:3
