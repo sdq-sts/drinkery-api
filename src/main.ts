@@ -7,6 +7,7 @@ import { API_PREFIX, IS_PRODUCTION } from './constants';
 import { LogLevel, ValidationPipe } from '@nestjs/common';
 
 async function bootstrap() {
+  const port = process.env.PORT || 3000;
   const validationPipe = new ValidationPipe({
     whitelist: true,
     skipMissingProperties: true,
@@ -26,6 +27,6 @@ async function bootstrap() {
   app.setGlobalPrefix(API_PREFIX);
   app.useGlobalPipes(validationPipe);
 
-  await app.listen(3000);
+  await app.listen(port);
 }
 bootstrap();

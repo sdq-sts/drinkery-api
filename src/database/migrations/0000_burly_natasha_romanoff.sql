@@ -5,9 +5,11 @@ CREATE TABLE IF NOT EXISTS "drinks" (
 	"ingredients" json DEFAULT '[]'::json,
 	"instructions" json DEFAULT '[]'::json,
 	"images" json DEFAULT '[]'::json NOT NULL,
+	"price" integer NOT NULL,
 	"recommended_season" text NOT NULL,
 	"optimal_time_to_enjoy" text NOT NULL,
 	"is_alcoholic" boolean NOT NULL,
 	"prompt" text,
-	"created_at" timestamp DEFAULT now() NOT NULL
+	"created_at" timestamp DEFAULT now() NOT NULL,
+	CONSTRAINT "drinks_id_unique" UNIQUE("id")
 );

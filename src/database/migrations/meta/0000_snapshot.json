@@ -1,7 +1,7 @@
 {
   "version": "5",
   "dialect": "pg",
-  "id": "7503f8ec-97e2-44c8-adbd-acc5f3d8cc8e",
+  "id": "25740f04-7cba-4e68-bfdd-4164e2eb731d",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "drinks": {
@@ -48,6 +48,12 @@
           "notNull": true,
           "default": "'[]'::json"
         },
+        "price": {
+          "name": "price",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
         "recommended_season": {
           "name": "recommended_season",
           "type": "text",
@@ -83,7 +89,15 @@
       "indexes": {},
       "foreignKeys": {},
       "compositePrimaryKeys": {},
-      "uniqueConstraints": {}
+      "uniqueConstraints": {
+        "drinks_id_unique": {
+          "name": "drinks_id_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "id"
+          ]
+        }
+      }
     }
   },
   "enums": {},
