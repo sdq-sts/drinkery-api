@@ -19,7 +19,6 @@ export class DrinksService {
         or(
           ilike(drinks.name, `%${filters.search}%`),
           ilike(drinks.description, `%${filters.search}%`),
-          ilike(drinks.description, `%${filters.search}%`),
         ),
       filters.season && eq(drinks.recommended_season, filters.season),
       filters.alcoholic && eq(drinks.is_alcoholic, filters.alcoholic),
