@@ -8,13 +8,13 @@ It is built with [NestJS](https://nestjs.com/) and uses [Drizzle](https://orm.dr
 
 <p align="center">
   <a href="https://www.postgresql.org/" target="blank">
-    <img src="./.vscode/assets/postgres-logo.png" width="75" alt="Postgres Logo" />
+    <img src="github/assets/postgres-logo.png" width="75" alt="Postgres Logo" />
   </a>
     <a href="https://orm.drizzle.team/" target="blank">
-    <img src=".vscode/assets/drizzle-logo.png" width="75" height="75" alt="Drizzle Logo" />
+    <img src="github/assets/drizzle-logo.png" width="75" height="75" alt="Drizzle Logo" />
   </a>
   <a href="http://nestjs.com/" target="blank">
-    <img src=".vscode/assets/nestjs-logo.svg" width="75" height="75" alt="Nestjs Logo" />
+    <img src="github/assets/nestjs-logo.svg" width="75" height="75" alt="Nestjs Logo" />
   </a>
 </p>
 
