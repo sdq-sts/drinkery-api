@@ -9,12 +9,9 @@ const generatedPath = join(process.cwd(), '/public/images');
 fs.readdir(imagesPath, (err, files) => {
   files.forEach(async (file) => {
     const promises = [
-      generateImage(file, imageSizes[0]),
-      generateImage(file, imageSizes[1]),
-      generateImage(file, imageSizes[2]),
-      generateImage(file, imageSizes[3]),
-      generateImage(file, imageSizes[4]),
+      Array.from(imageSizes).map((size) => generateImage(file, size)),
     ];
+
     await Promise.all(promises);
   });
 });

@@ -7,7 +7,7 @@ import {
   timestamp,
   json,
   boolean,
-  integer,
+  numeric,
 } from 'drizzle-orm/pg-core';
 
 const recommendedSeason = ['spring', 'summer', 'fall', 'winter'] as const;
@@ -21,7 +21,7 @@ export const drinks = pgTable('drinks', {
   ingredients: json('ingredients').$type<string[]>().default([]),
   instructions: json('instructions').$type<string[]>().default([]),
   images: json('images').$type<string[]>().default([]).notNull(),
-  price: integer('price').notNull(),
+  price: numeric('price', { scale: 2 }).notNull(),
   recommended_season: text('recommended_season', {
     enum: recommendedSeason,
   }).notNull(),
