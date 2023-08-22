@@ -16,7 +16,7 @@ fs.readdir(imagesPath, (err, files) => {
   });
 });
 
-async function generateImage(file, size = 1100) {
+async function generateImage(file: string, size = 1100) {
   const [id] = file.split('.');
   const outputFile = `${generatedPath}/${id}-${size}.jpg`;
   await sharp(join(imagesPath, file))
